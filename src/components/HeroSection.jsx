@@ -3,13 +3,13 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section
-      className="hero flex justify-center items-center"
+      className="hero flex justify-center items-center pb-36"
       style={{
         backgroundColor: "#ADECFF",
       }}
     >
       <div className="absolute" style={{top: '150px'}}>
-        <img src="/Lingkaran.png"style={{width: "100%"}} alt="" />
+        <img src="/Lingkaran.png"style={{width: "100%", pointerEvents: 'none'}} alt="" />
       </div>
       <div className="flex flex-col">
         <div className="header-hero mt-20">
@@ -44,7 +44,7 @@ const HeroSection = () => {
             Pesan Sekarang
           </button>
         </div>
-        <div className="subHero px-32 mt-40 z-50">
+        <div className="subHero px-32 mt-40">
           <div className="border-4 rounded-[16px] w-[80vw] border-button">
             <div className="grid grid-cols-7">
               <div className="background col-span-3 p-5">
