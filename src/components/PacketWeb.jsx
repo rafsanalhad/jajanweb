@@ -2,7 +2,7 @@ import React from 'react'
 
 const PacketWeb = () => {
   return (
-    <div className="mx-auto py-20 px-12 bg-[#f0f0f0]">
+    <div className="mx-auto py-20 px-12 bg-[#F8FCFF]">
       <p className="text-[16px] text-center">Pilihan Paket</p>
       <h3 className="lg:text-[40px] md:text-[32px] sm:text-[28px] text-[28px] text-center font-semibold mb-[50px]">Harga Pembuatan Website</h3>
       <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-center">

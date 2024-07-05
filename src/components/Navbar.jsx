@@ -25,12 +25,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar shadow-2xl lg:px-10 lg:h-[100px] md:h-[80px] sm:h-[80px] md:px-6 sm:px-6 px-6 py-5 sticky top-0 z-50 ${scrollPosition > 300 ? 'bg-[#fff]' : 'bg-[#fff]'}`}
+      className={`navbar shadow-2xl lg:px-10 lg:h-[100px] md:h-[80px] sm:h-[80px] md:px-6 sm:px-2 px-2 py-5 sticky top-0 z-50 ${scrollPosition > 300 ? 'bg-[#fff]' : 'bg-[#fff]'}`}
      
     >
       <div className="flex flex-row justify-between items-center">
         <div className="navbar-brand">
-          <h3 className="font-bold lg:text-[32px] lg:mt-0 md:mt-0 sm:mt-0 mt-0 md:text-[22px] sm:text-[22px] text-[22px] text-[#0597FA]">Jajanweb</h3>
+          <h3 className="font-bold lg:text-[32px] lg:mt-0 md:mt-0 sm:mt-0 mt-0 md:text-[22px] sm:text-[18px] text-[18px] text-[#0597FA]">Jajanweb</h3>
         </div>
         <div className="navbar-nav hidden lg:block">
           <ul className="flex flex-row items-center">

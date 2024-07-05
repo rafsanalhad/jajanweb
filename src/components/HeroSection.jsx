@@ -44,7 +44,7 @@ const HeroSection = () => {
             Pesan Sekarang
           </button>
         </div>
-        <div className="subHero flex justify-center lg:mt-40 md:mt-[20px] sm:mt-[20px] mt-[20px]">
+        <div className="subHero flex justify-center lg:mt-56 md:mt-[20px] sm:mt-[20px] mt-[20px]">
           <div className="border-4 rounded-[16px] w-[80vw] border-button">
             <div className="grid grid-cols-7">
               <div className="background lg:col-span-3 md:col-span-7 sm:col-span-7 col-span-7 p-5">
@@ -67,24 +67,24 @@ const HeroSection = () => {
                     beradaptasi dengan perubahan ini agar tetap relevan dan
                     kompetitif.
                   </p>
-                  <div className="grid grid-cols-3 mt-3">
-                    <div className="">
+                  <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 mt-3 lg:text-left md:text-left sm:text-center text-center">
+                    <div className="mb-3">
                     <div className="ketData lg:text-[40px] md:text-[28px] sm:text-[28px] text-[28px] text-button" style={{fontWeight: '600'}}>
                       13%
                     </div>
                     <p className="lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px]">Saja UMKM di Indonesia yang sudah beralih ke digital</p>
                     </div>
-                    <div className="">
+                    <div className="mb-3">
                     <div className="ketData lg:text-[40px] md:text-[28px] sm:text-[28px] text-[28px] text-button" style={{fontWeight: '600'}}>
-                      13%
+                      18%
                     </div>
-                    <p className="lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px]">Saja UMKM di Indonesia yang sudah beralih ke digital</p>
+                    <p className="lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px]">Saja UMKM yang menjangkau pasar di luar lingkungannya</p>
                     </div>
-                    <div className="">
+                    <div className="mb-3">
                     <div className="ketData lg:text-[40px] md:text-[28px] sm:text-[28px] text-[28px] text-button" style={{fontWeight: '600'}}>
-                      13%
+                      54%
                     </div>
-                    <p className="lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px]">Saja UMKM di Indonesia yang sudah beralih ke digital</p>
+                    <p className="lg:text-[16px] md:text-[14px] sm:text-[14px] text-[14px]">UMKM yang memanfaatkan internet untuk promosi produk</p>
                     </div>
                   </div>
                 </div>

@@ -16,8 +16,8 @@ function App() {
     <div className="min-h-screen w-full">
       <Navbar />
       <HeroSection />
-      <Solusi />  
-      {/* <Kenapa /> */}
+      
+      <Kenapa />
       <TypeWeb />
       <PacketWeb />
       <Accordion />
