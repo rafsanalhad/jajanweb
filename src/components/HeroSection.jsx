@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const HeroSection = () => {
   return (
@@ -7,27 +7,27 @@ const HeroSection = () => {
       style={{
         backgroundColor: "#ADECFF",
       }}
-    >
-      <div className="absolute lg:top-[150px] md:top-[100px] sm:top-[100px] top-[100px]">
+    >     
+      <div className="absolute lg:top-[150px] md:top-[100px] sm:hidden lg:block md:block hidden">
         <img src="/Lingkaran.png"style={{width: "100%", pointerEvents: 'none'}} alt="" />
       </div>
-      <div className="flex flex-col">
+      <div className="absolute top-[310px] lg:hidden md:hidden sm:block block">
+        <img src="/lingkaranMobile.png" style={{width: "100%", pointerEvents: 'none'}} alt="" />
+      </div>
+      <div className="w-full flex flex-col">
         <div className="header-hero mt-20">
-          <div className="text-hero text-center">
-            <h3 className="lg:text-[64px] md:text-[48px] sm:text-[20px] text-[20px] font-sansita font-bold">
-              Expand Your Business Reach
+          <div className="text-hero text-center" style={{lineHeight: "1.2"}}>
+            <h3 className="lg:block md:block sm:inline inline font-sansita lg:text-[64px] md:text-[48px] sm:text-[48px] text-[48px] font-extrabold">
+              Perluas Jangkauan Bisnis,
             </h3>
-            <h3 className="lg:text-[64px] md:text-[48px] sm:text-[28px] text-[28px] font-sansita font-bold">
-              Achieve Fantastis Profits
+            <h3 className="lg:block md:block sm:inline inline font-sansita lg:text-[64px] md:text-[48px] sm:text-[48px] text-[48px] font-extrabold">
+              Raih <span className="text-[#0597FA]">Keuntungan Fantastis</span>
             </h3>
           </div>
         </div>
-        <div className="text-hero mt-5 lg:px-[0px] md:px-[100px] sm:px-[100px] px-[100px]">
-          <p class="font-text text-center lg:text-[21px] md:text-[14px] sm:text-[14px] text-[14px] mt-[20px]">
-            Elevate your business and seize incredible profits with our dynamic
-            solutions. Our <br className="lg:block md:block sm:hidden hidden"/> strategic approach is crafted to navigate the
-            complexities of the modern market,
-            <br className="lg:block md:block sm:hidden hidden"/> ensuring your brand stands out amidst competition.
+        <div className="text-hero mt-5 lg:px-[0px] md:px-[100px] sm:px-[30px] px-[30px]">
+          <p class="font-text text-center lg:text-[18px] md:text-[14px] sm:text-[13px] text-[13px] lg:mt-[20px] md:mt-[20px] sm:mt-[0px] mt-[0px]">
+          Di era digital, kehadiran online yang kuat sangat penting. Kami siap membantu Anda dengan <br className="lg:block md:hidden sm:hidden hidden" />  website yang dirancang khusus untuk memperluas jangkauan bisnis dan meraih keuntungan fantastis.
           </p>
         </div>
         <div className="button-hero flex flex-row justify-center mt-5">
@@ -44,16 +44,16 @@ const HeroSection = () => {
             Pesan Sekarang
           </button>
         </div>
-        <div className="subHero px-32 lg:mt-40 md:mt-[20px] sm:mt-[20px] mt-[20px]">
+        <div className="subHero flex justify-center lg:mt-40 md:mt-[20px] sm:mt-[20px] mt-[20px]">
           <div className="border-4 rounded-[16px] w-[80vw] border-button">
             <div className="grid grid-cols-7">
               <div className="background lg:col-span-3 md:col-span-7 sm:col-span-7 col-span-7 p-5">
-                <p
-                  className="shadow-2xl py-3 px-3 w-[200px] rounded-[16px] font-bold lg:text-[18px] md:text-[14px] sm:text-[14px] text-[14px] text-button"
+                <div
+                  className="shadow-2xl py-3 px-3 w-[140px] rounded-[16px] font-bold lg:text-[18px] md:text-[14px] sm:text-[14px] text-[14px] text-button"
                   style={{ backgroundColor: "#B9EFFF" }}
                 >
                   Latar Belakang
-                </p>
+                </div>
                 <p className="lg:text-[42px] md:text-[30px] sm:text-[20px] text-[20px] mt-5 font-sansita font-bold"> 
                   Perubahan Perilaku Konsumen Menuntutmu Untuk Segera Go Digital
                 </p>

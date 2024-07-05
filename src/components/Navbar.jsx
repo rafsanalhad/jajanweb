@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar shadow-2xl lg:px-10 lg:h-[100px] md:h-[50px] sm:md-[50px] md:px-6 sm:px-6 px-6 py-5 sticky top-0 z-50 ${scrollPosition > 300 ? 'bg-[#fff]' : 'bg-[#fff]'}`}
+      className={`navbar shadow-2xl lg:px-10 lg:h-[100px] md:h-[80px] sm:h-[80px] md:px-6 sm:px-6 px-6 py-5 sticky top-0 z-50 ${scrollPosition > 300 ? 'bg-[#fff]' : 'bg-[#fff]'}`}
      
     >
       <div className="flex flex-row justify-between items-center">
