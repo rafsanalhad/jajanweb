@@ -45,7 +45,7 @@ const Kenapa = () => {
   ];
 
   return (
-    <div className="lg:pt-[120px] md:pt-[70px] sm:pt-[0px] pt-[0px0 bg-[#F8FCFF] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] py-[50px]">
+    <div className="lg:pt-[120px] md:pt-[70px] sm:pt-[40px] pt-[40px] bg-[#F8FCFF] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] py-[50px]">
       <div className="headerKenapa flex flex-col items-center p-5 text-center bg-white">
         <p style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Kenapa Harus Punya Website?</p>
         <p className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[40px]">

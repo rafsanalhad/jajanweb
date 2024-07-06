@@ -2,7 +2,7 @@ import React from 'react'
 
 const TypeWeb = () => {
   return (
-    <div className="lg:py-32 md:py-[70px] sm:py-[70px] py-[70px] px-[20px] flex flex-col items-center justify-center">
+    <div className="lg:py-32 md:py-[70px] sm:py-[70px] py-[70px] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] flex flex-col items-center justify-center">
      <p style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Website Apa Yang Kami Buat?</p>
         <p className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[50px] text-center">
         Pilihan <span className="text-[#0597FA]">& Jenis Website</span>, 

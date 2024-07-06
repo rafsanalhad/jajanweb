@@ -11,9 +11,9 @@ const Accordion = () => {
                 FAQ
               </span>
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                Any Questions? Look Here
+                Any Questions? <span className="text-[#0597FA]">Look Here</span>
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
+              <p className="text-[16px] text-body-color dark:text-dark-6">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
@@ -92,7 +92,7 @@ const AccordionItem = ({ header, text }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
+          <h4 className="mt-1 lg:text-lg md:text-lg sm:text-[15px] text-[15px] font-semibold text-dark dark:text-white">
             {header}
           </h4>
         </div>
@@ -103,7 +103,7 @@ const AccordionItem = ({ header, text }) => {
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+        <p className="py-3 lg:text-base md:text-base sm:text-[14px] text-[14px] leading-relaxed text-body-color dark:text-dark-6">
           {text}
         </p>
       </div>
