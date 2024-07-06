@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const HeroSection = () => {
   return (
     <section
-      className="hero flex justify-center items-center lg:pb-36 md:pb-5 sm:pb-5 pb-5"
+      className="hero flex justify-center items-center lg:pb-36 md:pb-20 sm:pb-5 pb-5"
       style={{
         backgroundColor: "#ADECFF",
       }}
