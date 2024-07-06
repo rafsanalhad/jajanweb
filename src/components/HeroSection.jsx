@@ -49,12 +49,12 @@ const HeroSection = () => {
             <div className="grid grid-cols-7">
               <div className="background lg:col-span-3 md:col-span-7 sm:col-span-7 col-span-7 p-5">
                 <div
-                  className="shadow-2xl py-3 px-3 w-[140px] rounded-[16px] font-bold lg:text-[18px] md:text-[14px] sm:text-[14px] text-[14px] text-button"
+                  className="shadow-2xl py-3 px-3 lg:w-[170px] md:w-[140px] sm:w-[135px] w-[135px] rounded-[16px] font-bold lg:text-[18px] md:text-[14px] sm:text-[14px] text-[14px] text-button"
                   style={{ backgroundColor: "#B9EFFF" }}
                 >
                   Latar Belakang
                 </div>
-                <p className="lg:text-[42px] md:text-[30px] sm:text-[20px] text-[20px] mt-5 font-sansita font-bold"> 
+                <p className="lg:text-[38px] md:text-[30px] sm:text-[20px] text-[20px] mt-5 font-sansita font-bold"> 
                   Perubahan Perilaku Konsumen Menuntutmu Untuk Segera Go Digital
                 </p>
               </div>
