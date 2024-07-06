@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const Kenapa = () => {
   const ref= useRef(null);
   const inView = useInView(ref, {once: true});
-  const delay= [0.2, 0.5, 0.7, 0.9];
+  const delay= [1, 1.5, 1.8, 2.2];
   const options = {
     items: 3,
     rewind: true,
