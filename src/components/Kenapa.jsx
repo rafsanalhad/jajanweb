@@ -1,8 +1,13 @@
 import React from "react";
+import {useRef} from "react";
 import CardWhyUs from "./CardWhyUs";
 import HeaderButton from "./HeaderButton";
+import { motion, useInView } from "framer-motion";
 
 const Kenapa = () => {
+  const ref= useRef(null);
+  const inView = useInView(ref, {once: true});
+  const delay= [0.2, 0.5, 0.7, 0.9];
   const options = {
     items: 3,
     rewind: true,
@@ -45,28 +50,30 @@ const Kenapa = () => {
   ];
 
   return (
-    <div className="lg:pt-[120px] md:pt-[70px] sm:pt-[40px] pt-[40px] bg-[#F8FCFF] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] py-[50px]">
+    <motion.div ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity:1, y:0} : ''} transition={{duration: 1 }} className="lg:pt-[120px] md:pt-[70px] sm:pt-[40px] pt-[40px] bg-[#F8FCFF] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] py-[50px]">
       <div className="headerKenapa flex flex-col items-center p-5 text-center bg-white">
-        <p style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Kenapa Harus Punya Website?</p>
-        <p className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[40px]">
+        <motion.p ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity:1, y:0} : ''} transition={{duration: 1 }} style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Kenapa Harus Punya Website?</motion.p>
+        <motion.p ref={ref} initial={{opacity: 0, scale: 0.5}} animate={inView ? {opacity:1, scale: 1} : ''} transition={{duration: 1 }} className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[40px]">
         <span className="text-[#0597FA]">Transformasi Digital Bukan Lagi <br className="lg:block md:block sm:hidden hidden" />Pilihan</span>, melainkan Keharusan
-        </p>
+        </motion.p>
       </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1">
       {data.map((dataWhy, index) => (
-        <CardWhyUs
-        index={index}
-          button={dataWhy.button}
-          title={dataWhy.title}
-          ket={dataWhy.ket}
-          img={dataWhy.img}
-          m={dataWhy.m}
-        />
+        <motion.div ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity:1, y:0} : ''} transition={{duration: 1, delay: delay[index] }} className="">
+            <CardWhyUs
+            index={index}
+              button={dataWhy.button}
+              title={dataWhy.title}
+              ket={dataWhy.ket}
+              img={dataWhy.img}
+              m={dataWhy.m}
+            />
+        </motion.div>
     ))}
 
       </div>
       {/* <div className="h-[1px] w-full bg-black"></div> */}
-    </div>
+    </motion.div>
   );
 };
 
