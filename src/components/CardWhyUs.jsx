@@ -3,7 +3,7 @@ import HeaderButton from "./HeaderButton";
 
 const CardWhyUs = ({ img, m, title, ket }) => {
   return (
-    <div className="shadow-sm mb-16 bg-[#fff] rounded-[10px] p-10 me-5">
+    <div className="shadow-sm lg:mb-16 md:mb-14 sm:mb-5 mb-5 bg-[#fff] rounded-[10px] p-10 lg:me-5 md:me-5 sm:me-0 me-0">
       <div className="flex flex-row">
       <div className="imgWhyUs">
         <img src={img} className="w-[80px] h-[40px]"alt="" />
