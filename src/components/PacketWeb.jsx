@@ -6,7 +6,7 @@ const PacketWeb = () => {
   const inView = useInView(ref, {once: true});
   const delay= [1, 1.5, 2];
   return (
-    <div className=" lg:py-20 md:py-14 sm:py-16 py-16 px-12 flex flex-col justify-center lg:items-center md:items-center bg-[#F8FCFF]">
+    <motion.div ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} transition={{duration: 1}} className=" lg:py-20 md:py-14 sm:py-16 py-16 px-10 flex flex-col justify-center lg:items-center md:items-center bg-[#F8FCFF]">
       <motion.p ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} transition={{duration: 1}} style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] text-center rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Berapa Harga Untuk Pembuatan Suatu Website?</motion.p>
         <motion.p ref={ref} initial={{opacity: 0, scale: 0.5}} animate={inView ? {opacity: 1, scale: 1} : ''} transition={{duration: 1}} className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[50px] text-center">
         Pilih Paket Yang <br /> <span className="text-[#0597FA]">Terbaik Untuk Anda</span>, 
@@ -75,7 +75,7 @@ const PacketWeb = () => {
        
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 

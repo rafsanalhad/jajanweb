@@ -6,7 +6,7 @@ const Accordion = () => {
   const inView = useInView(ref, {once: true});
   const delay= [1, 1.5];
   return (
-    <section className="relative lg:px-48 md:px-10 sm:px-10 px-10 z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <motion.section initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} ref={ref} transition={{duration: 1}} className="relative lg:px-48 md:px-10 sm:px-10 px-10 z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -58,7 +58,7 @@ const Accordion = () => {
       </div>
 
       
-    </section>
+    </motion.section>
   );
 };
 

@@ -6,7 +6,7 @@ const TypeWeb = () => {
   const inView = useInView(ref, {once: true});
   const delay= [1, 1.5, 2];
   return (
-    <div className="lg:py-32 md:py-[70px] sm:py-[70px] py-[70px] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] flex flex-col items-center justify-center">
+    <motion.div  ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} transition={{duration: 1}} className="lg:py-32 md:py-[70px] sm:py-[70px] py-[70px] lg:px-[100px] md:px-[20px] sm:px-10 px-10 flex flex-col items-center justify-center">
      <motion.p ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} transition={{duration: 1}} style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Website Apa Yang Kami Buat?</motion.p>
         <motion.p ref={ref} initial={{opacity: 0, scale: 0.5}} animate={inView ? {opacity: 1, scale: 1} : ''} transition={{duration: 1}} className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[50px] text-center">
         Pilihan <span className="text-[#0597FA]">& Jenis Website</span>, 
@@ -31,7 +31,7 @@ const TypeWeb = () => {
         </motion.div>
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 

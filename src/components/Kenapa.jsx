@@ -50,7 +50,7 @@ const Kenapa = () => {
   ];
 
   return (
-    <motion.div ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity:1, y:0} : ''} transition={{duration: 1 }} className="lg:pt-[120px] md:pt-[70px] sm:pt-[40px] pt-[40px] bg-[#F8FCFF] lg:px-[100px] md:px-[20px] sm:px-[20px] px-[20px] py-[50px]">
+    <motion.div ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity:1, y:0} : ''} transition={{duration: 1 }} className="lg:pt-[120px] md:pt-[70px] sm:pt-[40px] pt-[40px] bg-[#F8FCFF] lg:px-[100px] md:px-[20px] sm:px-10 px-10 py-[50px]">
       <div className="headerKenapa flex flex-col items-center p-5 text-center bg-white">
         <motion.p ref={ref} initial={{opacity: 0, y: -50}} animate={inView ? {opacity:1, y:0} : ''} transition={{duration: 1 }} style={{background: "linear-gradient(to right, #B9EFFF, #fff)"}} className="text-[#0597FA] rounded-[4px] px-3 lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px] font-semibold">Kenapa Harus Punya Website?</motion.p>
         <motion.p ref={ref} initial={{opacity: 0, scale: 0.5}} animate={inView ? {opacity:1, scale: 1} : ''} transition={{duration: 1 }} className="lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px] font-sansita font-semibold mb-[40px]">
