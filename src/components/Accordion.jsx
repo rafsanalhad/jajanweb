@@ -1,28 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import {motion, useInView} from 'framer-motion'
 
 const Accordion = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, {once: true});
+  const delay= [1, 1.5];
   return (
     <section className="relative lg:px-48 md:px-10 sm:px-10 px-10 z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-primary">
+              <motion.span initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} ref={ref} transition={{duration: 1}} className="mb-2 text-[#0597FA] block font-semibold text-primary lg:text-[22px] md:text-[20px] sm:text-[16px] text-[16px]">
                 FAQ
-              </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+              </motion.span>
+              <motion.h2 initial={{opacity: 0, scale: 0.5}} animate={inView ? {opacity: 1, scale: 1} : ''} ref={ref} transition={{duration: 1}} className="mb-4 font-bold text-dark dark:text-white lg:text-[48px] md:text-[36px] sm:text-[26px] text-[26px]">
                 Any Questions? <span className="text-[#0597FA]">Look Here</span>
-              </h2>
-              <p className="text-[16px] text-body-color dark:text-dark-6">
+              </motion.h2>
+              <motion.p initial={{opacity: 0, scale: 0.5}} animate={inView ? {opacity: 1, scale: 1} : ''} ref={ref} transition={{duration: 1}} className="text-[16px] text-body-color dark:text-dark-6">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
 
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2">
+          <motion.div className="w-full px-4 lg:w-1/2" initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} ref={ref} transition={{duration: 1, delay: delay[0]}}>
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
@@ -35,8 +39,8 @@ const Accordion = () => {
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
+          </motion.div>
+          <motion.div className="w-full px-4 lg:w-1/2" initial={{opacity: 0, y: -50}} animate={inView ? {opacity: 1, y: 0} : ''} ref={ref} transition={{duration: 1, delay: delay[1]}}>
             <AccordionItem
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
@@ -49,7 +53,7 @@ const Accordion = () => {
               header="How long we deliver your first blog post?"
               text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
